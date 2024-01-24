@@ -8,16 +8,16 @@ import lombok.extern.slf4j.Slf4j;
 public class SpringCoreService {
 
     public SpringCoreService() {
-        log.info("Object was created");
+        log.info("Constructor for springCoreService");
     }
 
     @PostConstruct
     public void init() {
-        log.info("INITIALIZE SpringCoreService");
+        log.info("INITIALIZE springCoreService");
     }
 
     @PreDestroy
     public void destroy() {
-        log.info("DESTROY SpringCoreService");
+        log.info("DESTROY springCoreService");
     }
 }
